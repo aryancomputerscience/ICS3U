@@ -1,1 +1,13 @@
-
+const prompt = require('prompt-sync')();
+console.log("1.4 - User Input");
+let year = prompt("What year are you born? ");
+console.log("You entered", year);
+let currentyear = 2024;
+let age = currentyear - year;
+console.log("You are likely", age, "years old");
+let name = prompt("What is your name? ");
+console.log("Hi,", name + ".","You were born in", year, "and you are likely", age, "years old.");
+console.log("Your name is", name.length, "letters long");
+let fahrenheit = prompt("What is the temperature in Fahrenheit? ");
+let celsius = (fahrenheit - 32) * 5/9;
+console.log("The temperature in celsius is", celsius);
