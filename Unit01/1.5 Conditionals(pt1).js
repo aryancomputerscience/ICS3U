@@ -1,4 +1,3 @@
-
 const prompt = require('prompt-sync')();
 let age = prompt("What is your age? ");
 
@@ -19,6 +18,8 @@ else
   }
 else if (user_name.length > 7)
     console.log("You have a long name");
+else
+  console.log("You have a short name")
 
 //random
 
@@ -29,7 +30,6 @@ if (character == user_name.length) {
   }
 else if (character > user_name.length)
     console.log("Too high ✖️");
-else if (character < user_name.length)
+else 
     console.log("Too low ✖️");
-
 
