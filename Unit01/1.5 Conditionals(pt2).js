@@ -1,12 +1,14 @@
 const prompt = require('prompt-sync')();
 
 let user_name = prompt("What is your name? ");
-let age = parseInt(prompt("Hello", user_name, "how old are you? "));
+let age = parseInt(prompt("Hello " + user_name + " how old are you? "));
 
-if (age >= 16)
+if (age >= 16) {
     console.log("You are old enough to drive.");
-else 
-    console.log("You are not old enough to drive yet.")
+}
+else {
+    console.log("You are not old enough to drive yet.");
+}
 
  
     // Show menu
@@ -14,6 +16,7 @@ else
 
   // Ask for selection
   let selection = parseInt(prompt("Hi " + user_name + ". Please make a selection "));
+
   
   if (selection == 1) {
       console.log("Let's play!");
